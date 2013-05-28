@@ -33,10 +33,10 @@ describe "Static pages" do
 		it "should have the content 'About Us' " do
 			visit '/static_pages/about'
 			page.should have_selector('h1',
-				:text => "| About Us")
+				:text => "About Us")
 		end
 		it "should have the right title" do
-			visit '/static/pages/about'
+			visit '/static_pages/about'
 			page.should have_selector('title',
 				:text => "| About Us")
 		end
